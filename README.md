@@ -33,6 +33,7 @@
 时间样本对制作，时间序列预测使用通过历史数据来预测将来的数据序列，通过将原始数据制作为X-Y的样本对，用来输入到深度学习模型中，样本制作变换形式如下所示：
 
 ![样本对制作](https://github.com/EwdAger/Industrial-Data-Time-Servies-Prediction/blob/master/docs/picture/%E6%95%B0%E6%8D%AE%E9%9B%86%E5%88%B6%E4%BD%9C%E5%9B%BE.png)
+```
 class DataLoader():
     """A class for loading and transforming data for the lstm_check_point model"""
 
@@ -88,12 +89,12 @@ class DataLoader():
             data_x.append(x)
             data_y.append(y)
         return np.array(data_x), np.array(data_y)
-
+```
 
 #### 3.2  模型建立
 
 ##### 3.2.1 代码
-
+```
 class Model():
 	"""A class for an building and inferencing an lstm model"""
 
@@ -127,7 +128,7 @@ class Model():
 
 		print('[Model] Model Compiled')
 		timer.stop()
-
+```
 ##### 3.2.2.tensorboard模型图
 
 ![tensorboard模型图](https://github.com/EwdAger/Industrial-Data-Time-Servies-Prediction/blob/master/docs/picture/tensorboard.png)

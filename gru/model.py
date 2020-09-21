@@ -82,7 +82,7 @@ class Model:
         print('[Model] %s epochs, %s batch size, %s batches per epoch' % (epochs, batch_size, steps_per_epoch))
 
         # tensorboard setting
-        model_name = "lstm_test_{}".format(dt.datetime.now().strftime('%d%m%Y-%H%M%S'))
+        model_name = "gru_test_{}".format(dt.datetime.now().strftime('%d%m%Y-%H%M%S'))
         logs_path = os.path.join(logs_dir, model_name)
         if not os.path.exists(logs_path): os.makedirs(logs_path)
         tensorboard = TensorBoard(log_dir=logs_path)
